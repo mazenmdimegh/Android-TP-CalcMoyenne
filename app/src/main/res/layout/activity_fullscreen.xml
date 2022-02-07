@@ -33,11 +33,25 @@
         android:onClick="backHome"/>
     <!-- This FrameLayout insets its children based on system windows using
          android:fitsSystemWindows. -->
+
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#d6d7d7"
+        android:text="ENVOYER PAR SMS"
+        android:textColor="@color/black"
+        android:textSize="24dp"
+        android:layout_marginTop="480dp"
+        android:layout_marginLeft="40dp"/>
+
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="@drawable/img1"
         android:fitsSystemWindows="true"
-        android:background="@drawable/img1">
+        android:visibility="visible">
 
 
         <LinearLayout
@@ -49,15 +63,30 @@
             android:orientation="horizontal"
             tools:ignore="UselessParent">
 
-            <Button
-                android:id="@+id/dummy_button"
-                style="?android:attr/buttonBarButtonStyle"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="@string/dummy_button" />
 
         </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="311dp"
+            android:layout_height="92dp"
+            android:layout_marginTop="400dp"
+            android:background="#ABFFFFFF"
+            android:text="Féliciation vous avez réussi avec une moyenne de "
+            android:textColor="@color/black"
+            android:textSize="24dp"
+            android:translationX="20dp" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="311dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="455dp"
+            android:background="#00FFFFFF"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="24dp"
+            android:translationX="20dp" />
     </FrameLayout>
 
 </FrameLayout>

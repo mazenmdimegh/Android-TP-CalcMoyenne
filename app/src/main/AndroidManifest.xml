@@ -16,9 +16,6 @@
             android:label="@string/title_activity_fullscreen"
             android:theme="@style/Theme.CalculMoyenne.Fullscreen" />
         <activity
-            android:name=".ActivityReussi"
-            android:exported="false" />
-        <activity
             android:name=".MainActivity"
             android:exported="true" >
             <intent-filter>
