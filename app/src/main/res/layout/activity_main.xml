@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#47539b"
+    android:orientation="vertical"
+    android:baselineAligned="false"
+    >
+
+    <EditText
+        android:id="@+id/one"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="30dp"
+        android:background="@color/white"
+        android:hint="1 ére note"
+        android:inputType="numberDecimal"
+        android:textColor="#716C6C"
+        android:textSize="24dp"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/two"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="30dp"
+        android:background="#00ddff"
+        android:ems="10"
+        android:hint="2 éme note"
+        android:inputType="numberDecimal"
+        android:textColor="#716C6C"
+        android:textSize="24dp"
+        app:layout_constraintTop_toBottomOf="@+id/one"
+        tools:layout_editor_absoluteX="5dp" />
+
+    <EditText
+        android:id="@+id/three"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="110dp"
+        android:background="#ffbb33"
+        android:ems="10"
+        android:hint="3 éme note"
+        android:inputType="numberDecimal"
+        android:textColor="#716C6C"
+        android:textSize="24dp"
+        app:layout_constraintTop_toBottomOf="@+id/one"
+        tools:layout_editor_absoluteX="5dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="346dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="70dp"
+        android:backgroundTint="#d6d7d7"
+        android:text="Calculer"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        app:layout_constraintTop_toBottomOf="@+id/three"
+        tools:layout_editor_absoluteX="32dp"
+        android:onClick="Calculer"
+        tools:ignore="MissingConstraints" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
