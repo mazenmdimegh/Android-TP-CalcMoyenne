@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CalculMoyenne">
         <activity
+            android:name=".ActivityEchec"
+            android:exported="false" />
+        <activity
             android:name=".Activity_Reussi"
             android:exported="false" />
         <activity

@@ -4,11 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:background="#47539b"
-    android:orientation="vertical"
+    android:background="#6ADAF6"
     android:baselineAligned="false"
-    >
+    android:orientation="vertical"
+    tools:context=".MainActivity">
 
     <EditText
         android:id="@+id/one"
@@ -27,7 +26,7 @@
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:layout_marginTop="30dp"
-        android:background="#00ddff"
+        android:background="#FFFFFF"
         android:ems="10"
         android:hint="2 éme note"
         android:inputType="numberDecimal"
@@ -41,7 +40,7 @@
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:layout_marginTop="110dp"
-        android:background="#ffbb33"
+        android:background="#FFFFFF"
         android:ems="10"
         android:hint="3 éme note"
         android:inputType="numberDecimal"
@@ -55,14 +54,15 @@
         android:layout_width="346dp"
         android:layout_height="59dp"
         android:layout_marginTop="70dp"
-        android:backgroundTint="#d6d7d7"
+        android:backgroundTint="#495050"
+        android:onClick="Calculer"
         android:text="Calculer"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
+        android:textColorHint="#ECECEC"
         android:textSize="18dp"
         app:layout_constraintTop_toBottomOf="@+id/three"
-        tools:layout_editor_absoluteX="32dp"
-        android:onClick="Calculer"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="32dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

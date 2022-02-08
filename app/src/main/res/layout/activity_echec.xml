@@ -4,9 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Activity_Reussi"
-    android:background="@drawable/img1">
-
+    tools:context=".ActivityEchec"
+    android:background="@drawable/fail">
     <Button
         android:id="@+id/btnHome"
         android:layout_width="129dp"
@@ -27,7 +26,7 @@
 
 
     <TextView
-        android:id="@+id/Felicitation"
+        android:id="@+id/Dommage"
         android:layout_width="311dp"
         android:layout_height="92dp"
         android:background="#ABFFFFFF"
@@ -59,4 +58,5 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.711"
         android:onClick="SmsApp"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

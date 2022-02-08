@@ -37,11 +37,15 @@ public class MainActivity extends AppCompatActivity {
             alert("Veuillez saisier les 3 notes");
         }else if (n1>20||n2>20||n3>20||n1<0||n2<0||n3<0){
             alert("les 3 notes doivent étre comprise entre 0 et 20");
-        }else if (Moyenne>10){
+        }else if (Moyenne>=10){
             Intent intent= new Intent(this,Activity_Reussi.class);
             intent.putExtra("Moyenne",String.valueOf(Moyenne));
             startActivity(intent);
             openActivityReussi();
+        }else{
+            Intent intent= new Intent(this,ActivityEchec.class);
+            intent.putExtra("Moyenne",String.valueOf(Moyenne));
+            startActivity(intent);
         }
 
 

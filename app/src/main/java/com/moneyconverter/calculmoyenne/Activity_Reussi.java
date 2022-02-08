@@ -24,4 +24,8 @@ public class Activity_Reussi extends AppCompatActivity {
 
 
     }
+    public void SmsApp(){
+        Intent i = getPackageManager().getLaunchIntentForPackage("com.google.android.apps.messagingLauncher:com.google.android.apps.messaging.ui.ConversationListActivity");
+        startActivity(i);
+    }
 }
