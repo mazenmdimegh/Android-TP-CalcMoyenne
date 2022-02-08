@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ActivityEchec"
-    android:background="@drawable/fail">
+    android:background="@drawable/Fail">
     <Button
         android:id="@+id/btnHome"
         android:layout_width="129dp"
@@ -24,7 +24,6 @@
         app:layout_constraintVertical_bias="0.029" />
 
 
-
     <TextView
         android:id="@+id/Dommage"
         android:layout_width="311dp"
@@ -36,27 +35,25 @@
         android:translationX="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.32"
+        app:layout_constraintHorizontal_bias="0.25"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.589" />
-
-
+        app:layout_constraintVertical_bias="0.796" />
 
     <Button
         android:id="@+id/btnSMS"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="#d6d7d7"
+        android:onClick="SmsApp"
         android:text="ENVOYER PAR SMS"
         android:textColor="@color/black"
         android:textSize="24dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintHorizontal_bias="0.444"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.711"
-        android:onClick="SmsApp"/>
+        app:layout_constraintVertical_bias="0.907" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
