@@ -48,7 +48,7 @@ private ActivityFullscreenBinding binding;
      binding = ActivityFullscreenBinding.inflate(getLayoutInflater());
      setContentView(binding.getRoot());
         Intent intent =getIntent();
-        binding.textView.setText(intent.getStringExtra("Moyenne"));
+        //binding.textView.setText(intent.getStringExtra("Moyenne"));
         mVisible = true;
         mControlsView = binding.fullscreenContentControls;
         mContentView = binding.fullscreenContent;

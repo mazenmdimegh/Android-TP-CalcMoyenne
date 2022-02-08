@@ -32,14 +32,14 @@ public class MainActivity extends AppCompatActivity {
         float n1 = Float.parseFloat(note1) ;
         float n2 = Float.parseFloat(note2) ;
         float n3 = Float.parseFloat(note3) ;
-        float Moyenne= n1+n2+n3/3;
+        float Moyenne= (n1+n2+n3)/3;
         if(note1.isEmpty()||note2.isEmpty()||note3.isEmpty()){
             alert("Veuillez saisier les 3 notes");
         }else if (n1>20||n2>20||n3>20||n1<0||n2<0||n3<0){
             alert("les 3 notes doivent étre comprise entre 0 et 20");
         }else if (Moyenne>10){
-            Intent intent= new Intent(this,FullscreenActivity.class);
-            intent.putExtra("Moyenne",Moyenne);
+            Intent intent= new Intent(this,Activity_Reussi.class);
+            intent.putExtra("Moyenne",String.valueOf(Moyenne));
             startActivity(intent);
             openActivityReussi();
         }

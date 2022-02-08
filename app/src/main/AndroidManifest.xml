@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.moneyconverter.calculmoyenne" >
+    package="com.moneyconverter.calculmoyenne">
 
     <application
         android:allowBackup="true"
@@ -8,7 +8,10 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.CalculMoyenne" >
+        android:theme="@style/Theme.CalculMoyenne">
+        <activity
+            android:name=".Activity_Reussi"
+            android:exported="false" />
         <activity
             android:name=".FullscreenActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
@@ -17,7 +20,7 @@
             android:theme="@style/Theme.CalculMoyenne.Fullscreen" />
         <activity
             android:name=".MainActivity"
-            android:exported="true" >
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
