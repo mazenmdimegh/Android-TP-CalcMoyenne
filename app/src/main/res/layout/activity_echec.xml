@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ActivityEchec"
-    android:background="@drawable/Fail">
+    android:background="@drawable/fail">
     <Button
         android:id="@+id/btnHome"
         android:layout_width="129dp"
@@ -21,7 +21,8 @@
         app:layout_constraintHorizontal_bias="0.056"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.029" />
+        app:layout_constraintVertical_bias="0.029"
+        tools:ignore="OnClick" />
 
 
     <TextView
@@ -45,7 +46,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="#d6d7d7"
-        android:onClick="SmsApp"
+        android:onClick="SendSms"
         android:text="ENVOYER PAR SMS"
         android:textColor="@color/black"
         android:textSize="24dp"
